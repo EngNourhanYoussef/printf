@@ -23,10 +23,10 @@ int is_printable(char c)
   */
 int append_hexa_code(char ascii_code, char buffer[], int i)
 {
-		char map_to[] = "0123456789ABCDEF";
-		
-		if (ascii_code < 0)
-			ascii_code *= -1;
+	char map_to[] = "0123456789ABCDEF";
+
+	if (ascii_code < 0)
+		ascii_code *= -1;
 
 		buffer[i++] = '\\';
 		buffer[i++] = 'x';
@@ -50,12 +50,12 @@ int is_digit(char c)
 	return (0);
 }
 /**
-   * convert_size_number - Casts a number to the specified size
-    * @num: Number to be casted.
-     * @size: Number indicating the type to be casted.
-      *
-       * Return: Casted value of num
-        */
+  * convert_size_number - Casts a number to the specified size
+  * @num: Number to be casted.
+  * @size: Number indicating the type to be casted.
+  *
+  * Return: Casted value of num
+  */
 long int convert_size_number(long int num, int size)
 {
 	if (size == S_LONG)
@@ -66,12 +66,12 @@ long int convert_size_number(long int num, int size)
 	return ((int)num);
 }
 /**
-   * convert_size_unsgnd - Casts a number to the specified size
-    * @num: Number to be casted
-     * @size: Number indicating the type to be casted
-      *
-       * Return: Casted value of num
-        */
+  * convert_size_unsgnd - Casts a number to the specified size
+  * @num: Number to be casted
+  * @size: Number indicating the type to be casted
+  *
+  * Return: Casted value of num
+  */
 long int convert_size_unsgnd(unsigned long int num, int size)
 {
 	if (size == S_LONG)
@@ -81,4 +81,3 @@ long int convert_size_unsgnd(unsigned long int num, int size)
 
 		return ((unsigned int)num);
 }
-
